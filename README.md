@@ -75,7 +75,6 @@ Now we tested server won't automatic buy Joja Subscription anymore.
 Referrence: https://github.com/stardew-valley-dedicated-server/server/issues/62
 
 ## After sleep airdrop event issue
-In 22 Summer after end of the day. the game triggered Air drop event after that the game won't go next day.
-Its made other player connect in the game and are'nt playable.
+In 22 Summer after end of the day. the game triggered Airdrop event. After that the game won't go next day and Its made other player can't connect into the game and not playable.
 It solved by set DISABLE_RENDERING=false in your .env files
 after you connected to VNC console. The console will usable and you can control the "Server" player to go next day"
