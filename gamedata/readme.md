@@ -1,0 +1,1 @@
+this for use for mount from /config/xdg/config/StardewValley in docker container
