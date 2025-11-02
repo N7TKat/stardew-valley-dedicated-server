@@ -66,3 +66,16 @@ Explore the [full documentation](docs/1.getting-started/1.introduction.md) to ge
 - **[Guide](docs/2.guide/1.architecture.md):** Learn more about the key concepts behind the server.
 - **[API](docs/3.api/):** Learn more about the concepts of the server.
 - **[Community](docs/4.community/):** Find out how to get involved.
+
+## For Automatic Buy of Joja Subscriptions
+When you have money at least 5K in your wallet. Server will automatic buy Joja Subscription at 6:30 every day.
+Now in branch v1.0.0-release we added the patched files (JunimoServer.dll) and config to mount in persistent volume in docker-compose.yml. 
+You can automatically to mount that files every time you start server.
+Now we tested server won't automatic buy Joja Subscription anymore.
+Referrence: https://github.com/stardew-valley-dedicated-server/server/issues/62
+
+#after sleep airdrop event issue
+In 22 Summer after end of the day. the game triggered Air drop event after that the game won't go next day.
+Its made other player connect in the game and are'nt playable.
+It solved by set DISABLE_RENDERING=false in your .env files
+after you connected to VNC console. The console will usable and you can control the "Server" player to go next day"
