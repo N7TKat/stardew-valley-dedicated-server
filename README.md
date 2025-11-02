@@ -68,10 +68,10 @@ Explore the [full documentation](docs/1.getting-started/1.introduction.md) to ge
 - **[Community](docs/4.community/):** Find out how to get involved.
 
 ## For Automatic Buy of Joja Subscriptions
-When you have money at least 5K in your wallet. Server will automatic buy Joja Subscription at 6:30 every day.
-Now in branch v1.0.0-release we added the patched files (JunimoServer.dll) and config to mount in persistent volume in docker-compose.yml. 
-You can automatically to mount that files every time you start server.
-Now we tested server won't automatic buy Joja Subscription anymore.
+<p> When you have money at least 5K in your wallet. Server will automatic buy Joja Subscription at 6:30 every day.<br>
+Now in branch v1.0.0-release we added the patched files (JunimoServer.dll) and config to mount in persistent volume in docker-compose.yml.<br>
+You can automatically to mount that files every time you start server.<br>
+Now we tested server won't automatic buy Joja Subscription anymore.</p>
 Referrence: https://github.com/stardew-valley-dedicated-server/server/issues/62
 
 ## After sleep airdrop event issue
