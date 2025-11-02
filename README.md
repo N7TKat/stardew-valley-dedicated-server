@@ -74,7 +74,7 @@ You can automatically to mount that files every time you start server.
 Now we tested server won't automatic buy Joja Subscription anymore.
 Referrence: https://github.com/stardew-valley-dedicated-server/server/issues/62
 
-##after sleep airdrop event issue
+## After sleep airdrop event issue
 In 22 Summer after end of the day. the game triggered Air drop event after that the game won't go next day.
 Its made other player connect in the game and are'nt playable.
 It solved by set DISABLE_RENDERING=false in your .env files
