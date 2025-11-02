@@ -1,13 +1,18 @@
 services:
     stardew:
         image: sdvd/server:latest
-        container_name: sdvd-server
+        container_name: sdvd-server-prod
         ports:
             - ${GAME_PORT}:24642/udp
             - ${VNC_PORT}:5800
         volumes:
             - game:/data/Stardew
-            - data:/config/xdg/config/StardewValley
+            # Mounting Save Files *Please Create folder "gamedata" to mount
+            - ./gamedata:/config/xdg/config/StardewValley
+            # [Optional] Extra mods to be loaded by the server (GenericModConfigMenu, TimeSpeed, etc.)
+            - ./external_mods:/data/Mods/extra
+            # Mounting Patched Junimoserver.dll Files for Don't Buy JoJa at Day 3 
+            - ./JunimoServerPatch/JunimoServer.dll:/data/Mods/JunimoServer/JunimoServer.dll
         environment:
             STEAM_USER: "${STEAM_USER}"
             STEAM_PASS: "${STEAM_PASS}"
